@@ -40,7 +40,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     margin-left: 2%;
-    flex: 1;
+    flex: 2;
 }
 
 .title {
@@ -121,4 +121,29 @@ body {
     height: 50%;
     align-self: center;
 
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .image {
+      border-radius: 3% 3% 0 0;
+    }
+  
+    .text {
+      border-radius: 0 0 3% 3%;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+@media (max-width: 600px) {
+  .title, .subtitle, .description, .add-cart-container {
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+  }
 }
